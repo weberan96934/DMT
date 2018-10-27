@@ -54,10 +54,13 @@
             this.lblModGeschick = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.programmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hilfeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.versionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prorammiererToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hilfeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.programmiererToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.spendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bearbeiteCharaktereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStärke)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCharisma)).BeginInit();
@@ -70,14 +73,14 @@
             // 
             // txtCharName
             // 
-            this.txtCharName.Location = new System.Drawing.Point(12, 48);
+            this.txtCharName.Location = new System.Drawing.Point(12, 27);
             this.txtCharName.Name = "txtCharName";
             this.txtCharName.Size = new System.Drawing.Size(132, 20);
             this.txtCharName.TabIndex = 0;
             // 
             // txtSpielerName
             // 
-            this.txtSpielerName.Location = new System.Drawing.Point(12, 74);
+            this.txtSpielerName.Location = new System.Drawing.Point(12, 53);
             this.txtSpielerName.Name = "txtSpielerName";
             this.txtSpielerName.Size = new System.Drawing.Size(132, 20);
             this.txtSpielerName.TabIndex = 11;
@@ -85,7 +88,7 @@
             // lblModStärke
             // 
             this.lblModStärke.AutoSize = true;
-            this.lblModStärke.Location = new System.Drawing.Point(128, 187);
+            this.lblModStärke.Location = new System.Drawing.Point(128, 166);
             this.lblModStärke.Name = "lblModStärke";
             this.lblModStärke.Size = new System.Drawing.Size(16, 13);
             this.lblModStärke.TabIndex = 32;
@@ -94,14 +97,14 @@
             // cmbRasse
             // 
             this.cmbRasse.FormattingEnabled = true;
-            this.cmbRasse.Location = new System.Drawing.Point(12, 127);
+            this.cmbRasse.Location = new System.Drawing.Point(12, 106);
             this.cmbRasse.Name = "cmbRasse";
             this.cmbRasse.Size = new System.Drawing.Size(132, 21);
             this.cmbRasse.TabIndex = 35;
             // 
             // numLevel
             // 
-            this.numLevel.Location = new System.Drawing.Point(150, 100);
+            this.numLevel.Location = new System.Drawing.Point(150, 79);
             this.numLevel.Maximum = new decimal(new int[] {
             20,
             0,
@@ -124,7 +127,7 @@
             // cmbKlasse
             // 
             this.cmbKlasse.FormattingEnabled = true;
-            this.cmbKlasse.Location = new System.Drawing.Point(12, 100);
+            this.cmbKlasse.Location = new System.Drawing.Point(12, 79);
             this.cmbKlasse.Name = "cmbKlasse";
             this.cmbKlasse.Size = new System.Drawing.Size(132, 21);
             this.cmbKlasse.TabIndex = 37;
@@ -132,14 +135,14 @@
             // cmbGesinnung
             // 
             this.cmbGesinnung.FormattingEnabled = true;
-            this.cmbGesinnung.Location = new System.Drawing.Point(12, 154);
+            this.cmbGesinnung.Location = new System.Drawing.Point(12, 133);
             this.cmbGesinnung.Name = "cmbGesinnung";
             this.cmbGesinnung.Size = new System.Drawing.Size(132, 21);
             this.cmbGesinnung.TabIndex = 38;
             // 
             // numStärke
             // 
-            this.numStärke.Location = new System.Drawing.Point(81, 185);
+            this.numStärke.Location = new System.Drawing.Point(81, 164);
             this.numStärke.Maximum = new decimal(new int[] {
             30,
             0,
@@ -156,7 +159,7 @@
             // 
             // numCharisma
             // 
-            this.numCharisma.Location = new System.Drawing.Point(81, 315);
+            this.numCharisma.Location = new System.Drawing.Point(81, 294);
             this.numCharisma.Maximum = new decimal(new int[] {
             30,
             0,
@@ -173,7 +176,7 @@
             // 
             // numWeisheit
             // 
-            this.numWeisheit.Location = new System.Drawing.Point(81, 289);
+            this.numWeisheit.Location = new System.Drawing.Point(81, 268);
             this.numWeisheit.Maximum = new decimal(new int[] {
             30,
             0,
@@ -190,7 +193,7 @@
             // 
             // numIntelligenz
             // 
-            this.numIntelligenz.Location = new System.Drawing.Point(81, 263);
+            this.numIntelligenz.Location = new System.Drawing.Point(81, 242);
             this.numIntelligenz.Maximum = new decimal(new int[] {
             30,
             0,
@@ -207,7 +210,7 @@
             // 
             // numKonstitution
             // 
-            this.numKonstitution.Location = new System.Drawing.Point(81, 237);
+            this.numKonstitution.Location = new System.Drawing.Point(81, 216);
             this.numKonstitution.Maximum = new decimal(new int[] {
             30,
             0,
@@ -224,7 +227,7 @@
             // 
             // numGeschick
             // 
-            this.numGeschick.Location = new System.Drawing.Point(81, 211);
+            this.numGeschick.Location = new System.Drawing.Point(81, 190);
             this.numGeschick.Maximum = new decimal(new int[] {
             30,
             0,
@@ -242,7 +245,7 @@
             // lblStärke
             // 
             this.lblStärke.AutoSize = true;
-            this.lblStärke.Location = new System.Drawing.Point(12, 187);
+            this.lblStärke.Location = new System.Drawing.Point(12, 166);
             this.lblStärke.Name = "lblStärke";
             this.lblStärke.Size = new System.Drawing.Size(41, 13);
             this.lblStärke.TabIndex = 45;
@@ -251,7 +254,7 @@
             // lblCharisma
             // 
             this.lblCharisma.AutoSize = true;
-            this.lblCharisma.Location = new System.Drawing.Point(12, 317);
+            this.lblCharisma.Location = new System.Drawing.Point(12, 296);
             this.lblCharisma.Name = "lblCharisma";
             this.lblCharisma.Size = new System.Drawing.Size(53, 13);
             this.lblCharisma.TabIndex = 46;
@@ -260,7 +263,7 @@
             // lblWeisheit
             // 
             this.lblWeisheit.AutoSize = true;
-            this.lblWeisheit.Location = new System.Drawing.Point(12, 291);
+            this.lblWeisheit.Location = new System.Drawing.Point(12, 270);
             this.lblWeisheit.Name = "lblWeisheit";
             this.lblWeisheit.Size = new System.Drawing.Size(51, 13);
             this.lblWeisheit.TabIndex = 47;
@@ -269,7 +272,7 @@
             // lblIntelligenz
             // 
             this.lblIntelligenz.AutoSize = true;
-            this.lblIntelligenz.Location = new System.Drawing.Point(12, 265);
+            this.lblIntelligenz.Location = new System.Drawing.Point(12, 244);
             this.lblIntelligenz.Name = "lblIntelligenz";
             this.lblIntelligenz.Size = new System.Drawing.Size(57, 13);
             this.lblIntelligenz.TabIndex = 48;
@@ -278,7 +281,7 @@
             // lblKonstitution
             // 
             this.lblKonstitution.AutoSize = true;
-            this.lblKonstitution.Location = new System.Drawing.Point(12, 239);
+            this.lblKonstitution.Location = new System.Drawing.Point(12, 218);
             this.lblKonstitution.Name = "lblKonstitution";
             this.lblKonstitution.Size = new System.Drawing.Size(65, 13);
             this.lblKonstitution.TabIndex = 49;
@@ -287,7 +290,7 @@
             // lblGeschick
             // 
             this.lblGeschick.AutoSize = true;
-            this.lblGeschick.Location = new System.Drawing.Point(12, 213);
+            this.lblGeschick.Location = new System.Drawing.Point(12, 192);
             this.lblGeschick.Name = "lblGeschick";
             this.lblGeschick.Size = new System.Drawing.Size(55, 13);
             this.lblGeschick.TabIndex = 50;
@@ -296,7 +299,7 @@
             // lblModCharisma
             // 
             this.lblModCharisma.AutoSize = true;
-            this.lblModCharisma.Location = new System.Drawing.Point(128, 317);
+            this.lblModCharisma.Location = new System.Drawing.Point(128, 296);
             this.lblModCharisma.Name = "lblModCharisma";
             this.lblModCharisma.Size = new System.Drawing.Size(16, 13);
             this.lblModCharisma.TabIndex = 51;
@@ -305,7 +308,7 @@
             // lblModKonstitution
             // 
             this.lblModKonstitution.AutoSize = true;
-            this.lblModKonstitution.Location = new System.Drawing.Point(128, 239);
+            this.lblModKonstitution.Location = new System.Drawing.Point(128, 218);
             this.lblModKonstitution.Name = "lblModKonstitution";
             this.lblModKonstitution.Size = new System.Drawing.Size(16, 13);
             this.lblModKonstitution.TabIndex = 52;
@@ -314,7 +317,7 @@
             // lblModWeisheit
             // 
             this.lblModWeisheit.AutoSize = true;
-            this.lblModWeisheit.Location = new System.Drawing.Point(128, 291);
+            this.lblModWeisheit.Location = new System.Drawing.Point(128, 270);
             this.lblModWeisheit.Name = "lblModWeisheit";
             this.lblModWeisheit.Size = new System.Drawing.Size(16, 13);
             this.lblModWeisheit.TabIndex = 53;
@@ -323,7 +326,7 @@
             // lblModIntelligenz
             // 
             this.lblModIntelligenz.AutoSize = true;
-            this.lblModIntelligenz.Location = new System.Drawing.Point(128, 265);
+            this.lblModIntelligenz.Location = new System.Drawing.Point(128, 244);
             this.lblModIntelligenz.Name = "lblModIntelligenz";
             this.lblModIntelligenz.Size = new System.Drawing.Size(16, 13);
             this.lblModIntelligenz.TabIndex = 54;
@@ -332,7 +335,7 @@
             // lblModGeschick
             // 
             this.lblModGeschick.AutoSize = true;
-            this.lblModGeschick.Location = new System.Drawing.Point(128, 213);
+            this.lblModGeschick.Location = new System.Drawing.Point(128, 192);
             this.lblModGeschick.Name = "lblModGeschick";
             this.lblModGeschick.Size = new System.Drawing.Size(16, 13);
             this.lblModGeschick.TabIndex = 55;
@@ -342,7 +345,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.programmToolStripMenuItem,
-            this.hilfeToolStripMenuItem});
+            this.hilfeToolStripMenuItem,
+            this.exitToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(788, 24);
@@ -352,68 +356,89 @@
             // programmToolStripMenuItem
             // 
             this.programmToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.versionToolStripMenuItem,
-            this.prorammiererToolStripMenuItem});
+            this.prorammiererToolStripMenuItem,
+            this.bearbeiteCharaktereToolStripMenuItem});
             this.programmToolStripMenuItem.Name = "programmToolStripMenuItem";
             this.programmToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.programmToolStripMenuItem.Text = "Programm";
-            // 
-            // hilfeToolStripMenuItem
-            // 
-            this.hilfeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exitToolStripMenuItem});
-            this.hilfeToolStripMenuItem.Name = "hilfeToolStripMenuItem";
-            this.hilfeToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.hilfeToolStripMenuItem.Text = "Hilfe";
-            // 
-            // versionToolStripMenuItem
-            // 
-            this.versionToolStripMenuItem.Name = "versionToolStripMenuItem";
-            this.versionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.versionToolStripMenuItem.Text = "Version";
+            this.programmToolStripMenuItem.Text = "Charaktere";
             // 
             // prorammiererToolStripMenuItem
             // 
             this.prorammiererToolStripMenuItem.Name = "prorammiererToolStripMenuItem";
-            this.prorammiererToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.prorammiererToolStripMenuItem.Text = "Prorammierer";
+            this.prorammiererToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.prorammiererToolStripMenuItem.Text = "Übersicht";
+            // 
+            // hilfeToolStripMenuItem
+            // 
+            this.hilfeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem,
+            this.programmiererToolStripMenuItem,
+            this.spendenToolStripMenuItem});
+            this.hilfeToolStripMenuItem.Name = "hilfeToolStripMenuItem";
+            this.hilfeToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.hilfeToolStripMenuItem.Text = "Info";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "Version";
+            // 
+            // exitToolStripMenuItem1
+            // 
+            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem1.Text = "Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.ExitToolStripMenuItem1_Click);
+            // 
+            // programmiererToolStripMenuItem
+            // 
+            this.programmiererToolStripMenuItem.Name = "programmiererToolStripMenuItem";
+            this.programmiererToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.programmiererToolStripMenuItem.Text = "Programmierer";
+            // 
+            // spendenToolStripMenuItem
+            // 
+            this.spendenToolStripMenuItem.Name = "spendenToolStripMenuItem";
+            this.spendenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.spendenToolStripMenuItem.Text = "Spenden";
+            // 
+            // bearbeiteCharaktereToolStripMenuItem
+            // 
+            this.bearbeiteCharaktereToolStripMenuItem.Name = "bearbeiteCharaktereToolStripMenuItem";
+            this.bearbeiteCharaktereToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bearbeiteCharaktereToolStripMenuItem.Text = "Bearbeiten";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(788, 578);
-            this.Controls.Add(this.lblModGeschick);
-            this.Controls.Add(this.lblModIntelligenz);
-            this.Controls.Add(this.lblModWeisheit);
-            this.Controls.Add(this.lblModKonstitution);
-            this.Controls.Add(this.lblModCharisma);
-            this.Controls.Add(this.lblGeschick);
-            this.Controls.Add(this.lblKonstitution);
-            this.Controls.Add(this.lblIntelligenz);
-            this.Controls.Add(this.lblWeisheit);
-            this.Controls.Add(this.lblCharisma);
-            this.Controls.Add(this.lblStärke);
-            this.Controls.Add(this.numGeschick);
-            this.Controls.Add(this.numKonstitution);
-            this.Controls.Add(this.numIntelligenz);
-            this.Controls.Add(this.numWeisheit);
-            this.Controls.Add(this.numCharisma);
-            this.Controls.Add(this.numStärke);
-            this.Controls.Add(this.cmbGesinnung);
-            this.Controls.Add(this.cmbKlasse);
-            this.Controls.Add(this.numLevel);
-            this.Controls.Add(this.cmbRasse);
-            this.Controls.Add(this.lblModStärke);
-            this.Controls.Add(this.txtSpielerName);
+            this.ClientSize = new System.Drawing.Size(788, 1023);
             this.Controls.Add(this.txtCharName);
+            this.Controls.Add(this.lblModGeschick);
+            this.Controls.Add(this.txtSpielerName);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.lblModIntelligenz);
+            this.Controls.Add(this.numGeschick);
+            this.Controls.Add(this.lblModStärke);
+            this.Controls.Add(this.numKonstitution);
+            this.Controls.Add(this.lblModWeisheit);
+            this.Controls.Add(this.lblStärke);
+            this.Controls.Add(this.cmbRasse);
+            this.Controls.Add(this.numIntelligenz);
+            this.Controls.Add(this.lblModKonstitution);
+            this.Controls.Add(this.lblCharisma);
+            this.Controls.Add(this.numLevel);
+            this.Controls.Add(this.numWeisheit);
+            this.Controls.Add(this.lblModCharisma);
+            this.Controls.Add(this.lblWeisheit);
+            this.Controls.Add(this.cmbKlasse);
+            this.Controls.Add(this.numCharisma);
+            this.Controls.Add(this.lblGeschick);
+            this.Controls.Add(this.lblIntelligenz);
+            this.Controls.Add(this.cmbGesinnung);
+            this.Controls.Add(this.numStärke);
+            this.Controls.Add(this.lblKonstitution);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
@@ -461,9 +486,12 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem programmToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hilfeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem versionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem prorammiererToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem bearbeiteCharaktereToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem programmiererToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem spendenToolStripMenuItem;
     }
 }
 

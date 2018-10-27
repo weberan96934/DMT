@@ -145,5 +145,10 @@ namespace DMT
             cmbGesinnung.Items.Add(Gesinnung.chaotischBöse.ToString());
             cmbGesinnung.SelectedItem = charakter.Gesinnung.ToString();
         }
+
+        private void ExitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
