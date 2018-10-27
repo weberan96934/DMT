@@ -9,7 +9,7 @@ namespace DMT
     static class Program
     {
         /// <summary>
-        /// Der Haupteinstiegspunkt für die Anwendung.
+        /// Der Haupteinstiegspunkt für die Anwendungg.
         /// </summary>
         [STAThread]
         static void Main()
