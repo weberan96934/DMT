@@ -24,7 +24,7 @@ namespace DMT
 
             for (int i = 0; i < würfelAnzahl; i++)
             {
-                numbers.Add(rNumber.Next(1, würfelTyp));
+                numbers.Add(rNumber.Next(1, würfelTyp+1));
             }
 
             numbers.Sort();

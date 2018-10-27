@@ -17,7 +17,7 @@ namespace DMT
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Würfel würfel = new Würfel();
-
+            würfel.Würfeln(20, true, false);
             
 
             Application.Run(new Form1());
