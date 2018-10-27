@@ -22,17 +22,22 @@ namespace DMT
         public RüstungMittel RüstungMittel;
         public RüstungSchwer RüstungSchwer;
         public Gesinnung Gesinnung;
-        public int Level, Hp, Stärke, Geschick, Konstitution, Intelligenz, Weisheit, Charisma, Übungsbonus, Initiative, Rüstungsklasse, Akrobatik, ArkaneKunde, Athletik, Auftreten, Einschüchtern,
-            Fingerfertigkeit, Geschichte, Heilkunde, Heimlichkeit, MitTierenUmgehen, MotiveErkennen, Nachforschungen, Naturkunde, Religion, Täuschen, Überlebenskunst, Überzeugen, Wahrnehmung, Exp,
-            ModStärke, ModGeschick, ModKonstitution, ModIntelligenz, ModWeisheit, ModCharisma;
-        public bool GeübtAkrobatik, GeübtArkaneKunde, GeübtAthletik, GeübtAuftreten, GeübtEinschüchtern, GeübtFingerfertigkeit, GeübtGeschichte, GeübtHeilkunde, GeübtHeimlichkeit, GeübtMitTierenUmgehen,
-            GeübtMotiveErkennen, GeübtNachforschungen, GeübtNaturkunde, GeübtReligion, GeübtTäuschen, GeübtÜberlebenskunst, GeübtÜberzeugen, GeübtWahrnehmung;
+        public int Level, Hp, Stärke, Geschick, Konstitution, Intelligenz, Weisheit, Charisma, Übungsbonus, Initiative, Rüstungsklasse, Akrobatik, ArkaneKunde,
+            Athletik, Auftreten, Einschüchtern, Fingerfertigkeit, Geschichte, Heilkunde, Heimlichkeit, MitTierenUmgehen, MotiveErkennen, Nachforschungen,
+            Naturkunde, Religion, Täuschen, Überlebenskunst, Überzeugen, Wahrnehmung, Exp, ModStärke, ModGeschick, ModKonstitution, ModIntelligenz, ModWeisheit,
+            ModCharisma;
+        public bool GeübtAkrobatik, GeübtArkaneKunde, GeübtAthletik, GeübtAuftreten, GeübtEinschüchtern, GeübtFingerfertigkeit, GeübtGeschichte, GeübtHeilkunde,
+            GeübtHeimlichkeit, GeübtMitTierenUmgehen, GeübtMotiveErkennen, GeübtNachforschungen, GeübtNaturkunde, GeübtReligion, GeübtTäuschen,
+            GeübtÜberlebenskunst, GeübtÜberzeugen, GeübtWahrnehmung;
 
-        public Charakter(string spielerName, string charakterName, Klasse klasse, Rasse rasse, Gesinnung gesinnung, int level, int hp, int stärke, int geschick, int konstitution, int intelligenz, int weisheit, int charisma,
-            int exp, bool geübtAkrobatik = false, bool geübtArkaneKunde = false, bool geübtAthletik = false, bool geübtAuftreten = false, bool geübtEinschüchtern = false, bool geübtFingerfertigkeit = false,
-            bool geübtGeschichte = false, bool geübtHeilkunde = false, bool geübtHeimlichkeit = false, bool geübtMitTierenUmgehen = false, bool geübtMotiveErkennen = false, bool geübtNachforschungen = false,
-            bool geübtNaturkunde = false, bool geübtReligion = false, bool geübtTäuschen = false, bool geübtÜberlebenskunst = false, bool geübtÜberzeugen = false, bool geübtWahrnehmung = false, RüstungLeicht rüstungLeicht = RüstungLeicht.keine,
-            RüstungMittel rüstungMittel = RüstungMittel.keine, RüstungSchwer rüstungSchwer = RüstungSchwer.keine)
+        public Charakter(string spielerName, string charakterName, Klasse klasse, Rasse rasse, Gesinnung gesinnung, int level, int hp, int stärke, int geschick,
+            int konstitution, int intelligenz, int weisheit, int charisma, int exp, bool geübtAkrobatik = false, bool geübtArkaneKunde = false,
+            bool geübtAthletik = false, bool geübtAuftreten = false, bool geübtEinschüchtern = false, bool geübtFingerfertigkeit = false,
+            bool geübtGeschichte = false, bool geübtHeilkunde = false, bool geübtHeimlichkeit = false, bool geübtMitTierenUmgehen = false,
+            bool geübtMotiveErkennen = false, bool geübtNachforschungen = false, bool geübtNaturkunde = false, bool geübtReligion = false,
+            bool geübtTäuschen = false, bool geübtÜberlebenskunst = false, bool geübtÜberzeugen = false, bool geübtWahrnehmung = false,
+            RüstungLeicht rüstungLeicht = RüstungLeicht.keine, RüstungMittel rüstungMittel = RüstungMittel.keine,
+            RüstungSchwer rüstungSchwer = RüstungSchwer.keine)
         {
             SpielerName = spielerName;
             CharakterName = charakterName;
